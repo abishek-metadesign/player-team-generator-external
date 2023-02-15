@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "position": {
+          "type": "string"
+        },
+        "playerSkills": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "skill": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "skill",
+                "value"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "name",
+        "position",
+        "playerSkills"
+      ]
+    }
+  ]
+}

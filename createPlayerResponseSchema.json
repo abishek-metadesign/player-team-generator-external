@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "position": {
+      "type": "string"
+    },
+    "playerSkills": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "skill": {
+              "type": "string"
+            },
+            "value": {
+              "type": "integer"
+            },
+            "playerId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "skill",
+            "value",
+            "playerId"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "skill": {
+              "type": "string"
+            },
+            "value": {
+              "type": "integer"
+            },
+            "playerId": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "skill",
+            "value",
+            "playerId"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "position",
+    "playerSkills"
+  ]
+}
